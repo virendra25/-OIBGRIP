@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --text: 1.5rem;
+    --head: calc(1rem + 5vw);
+    --bg-color: #fff;
+  }
+  
+  body {
+    font-family: "Sofia", sans-serif;
+  }
+  
+  .front {
+    min-height: 100vh;
+    background: url("https://xp.io/storage/2j2NgUzG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    animation: slide 1s ease-in-out;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1.5rem;
+    color: rgb(90, 3, 3);
+    transform: translateY(-100%);
+    animation: movedown 850ms ease-in 1s forwards;
+  }
+  
+  @keyframes movedown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
+  .navbar ul {
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: var(--text);
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: rgba(67, 64, 67, 0.842);
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navbar ul li a:hover {
+    border-bottom: 2px solid var(--bg-color);
+  }
+  .front1 {
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  .front1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+    z-index: -1;
+    top: 0;
+    opacity: 0.6;
+  }
+  
+  .front1 a {
+    left:80px; top:2px;margin-left:110px;
+    color: rgb(20, 26, 23);
+    background: rgba(36, 74, 49, 0.297);
+    font-weight: 900;
+    font-size: var(--text);
+    padding: 0.8rem 1rem;
+    margin: 0.8rem auto;
+
+    
+    display: block;
+    text-decoration: none;
+    transition: opacity 250ms linear;
+  }
+  
+  .front1 a:hover {
+    opacity: 0.8;
+  }
+  .about{
+   
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(131, 154, 132, 0.808);
+    font-family: "Dancing Script";
+  }
+  .word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background: rgb(111, 125, 129);
+    text-align: center;
+  }
+  h1{
+    position: relative;
+    margin: 0;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+   
+  }
+  h1 span{
+    color: aquamarine;
+  }
+  footer{
+    color: #fff;
+    background-color: black;
+    border-image: red;
+    padding: 10px;
+    margin:0;
+  }
+  .foot{
+    text-align: end;
+    color: red;
+  }
+ 
