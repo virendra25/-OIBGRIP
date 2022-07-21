@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header{
+    background-color: rgb(235, 228, 228);
+    font-style: oblique;
+  }
+  ul li {
+    text-align: center;
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: var(--text);
+  }
+  
+   ul li a {
+    text-decoration: none;
+    color: rgba(67, 64, 67, 0.842);
+    border-bottom: 2px solid transparent;
+  }
+  
+   ul li a:hover {
+    border-bottom: 2px solid var(--bg-color);
+    
+  }
+  a:hover{
+    color: RED;
+    background-color: black;
+  }
+  a {
+    left:80px; top:2px;margin-left:110px;
+    color: rgb(20, 26, 23);
+    background: rgba(36, 74, 49, 0.297);
+    font-weight: 900;
+    font-size: var(--text);
+    padding: 0.8rem 1rem;
+    margin: 0.8rem auto;
+    display: block;
+    text-decoration: none;
+    transition: opacity 250ms linear;
+  }
+  a:hover {
+    opacity: 0.8;
+  }
+  .main{
+   background-image: url(https://xp.io/storage/2nw71vkZ.jpg);
+   background-repeat: no-repeat;
+   background-size: 1300px 700px;
+   font-style: italic;
+    padding: 2rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    
+  }
+  img {
+    height: 180px;
+    width: 150px;
+    display: block;
+}
+.About{
+  font-family: "Sofia", sans-serif;
+  text-align: center;
+  background-color: rgb(240, 247, 247);
+  color: rgb(40, 3, 3);
+  padding: 22px;
+  
+}
+
+.Education{ 
+  font-style: oblique;
+  height: 230px;
+  width: auto;
+  color: rgb(211, 245, 126);
+  background-color: black;
+  text-align: center;
+ 
+}
+.one{
+  display: block;
+  margin-left: 70px;
+  float: left;
+  border-radius: 25px;
+  border-color: rgba(219, 241, 127, 0.32);
+  text-align: center;
+  background-color: rgb(156, 148, 148);
+  color: black;
+  cursor: pointer;
+}
+.two{
+  display: block;
+  margin-right: 70px;
+  float: right;
+  border-radius: 25px;
+  border-color: aqua;
+  text-align: center;
+  background-color:rgb(156, 148, 148);
+  color: black;
+  cursor: pointer;
+}
+.one:hover{
+   color: RED;
+    background-color: black;
+}
+.two:hover{
+  color: RED;
+  background-color: black;
+}
+footer{
+  font-style: oblique;
+    color: rgb(117, 5, 5);
+    background-color: rgb(240, 247, 247);
+    border-image: red;
+    padding: 1px;
+    padding-left: 300px;
+    margin:0; 
+}
+
+
+
